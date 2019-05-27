@@ -1,0 +1,72 @@
+﻿★[항상 수정후 Github에 최신화하기] 
+
+(기본틀)
+{
+	splashActivity로 한이음 항만 스캐너 이미지 띄우기
+	MainActivity = 로그인화면 (ID, Passwd, 로그인버튼, 회원가입 TextView)
+	로그인되면 스캐너(카메라) 열어주는 버튼추가
+	ActionBar 속성 : 로그인정보(직원사진?,이름,직급 등), 로그아웃버튼, 내 문서관리 등
+	
+	...
+
+}
+
+
+
+
+[공부 & 팁]
+gradle - volley (네트워크 통신과 관련된 라이브러리)
+
+레이아웃에 설정된 뷰들을 가져오는 메소드가 findViewByid
+
+로딩화면 SplashActivity = 처음 켰을 때 나오는 페이지, 초기셋팅(Initializing), 대표이미지
+
+shift + ctrl + N 파일검색
+
+XML로 색상 설정) 동일한 숫자6개일 경우 3자리만 작성해도됨. ex.#EEE
+
+액티비티 화면 구성
+액티비티 화면 전체는 Window라 부르며, Window는 크게 Content 영역과 ActionBar영역으로 나뉜다.
+
+Content영역: setCountView()로 출력하는 내용이 출력이 되어 나타나는 곳
+ActionBar영역: Window 상단에 출력되며 App Icon, View Control, Action Button, Overflow Meun 등이 나오도록 구성 가능.
+
+
+
+
+
+[문제] sdk에서 adb.exe 설치가 안되어 IDE ERROR 발생.
+platform-tools 재다운 후 기존 폴더와 바꿈.
+JDK, SDK 환경변수 설정해주니 에뮬레이터 돌아감
+
+minSdkVersion 24 (에뮬레이터 버전맞추기)
+
+Application installing falied (AVD - Wiped Data)
+1. Build - Clean Project
+2. Build - Rebuild Project
+
+java.lang.NullPointerException = 객체ID를 잘못입력했을 때.(안드로이드는 내가 생성한 ID가 아니어도 오류표시를 안해줌)
+
+
+
+
+[에러]
+cannot resolve symbol 'R'
+= 'R' 파일은 내 프로젝트 내에 여러 리소스(레이아웃, 이미지, 아이콘 등등..)를 찾을 수 있는 주소값들을 자동생성하여 가지고 있는 파일이다.
+= solution1). 메뉴 > Build > clean project,rebuild project
+= solution2). 메뉴 > File > Invalidate Caches/Restart
+
+
+Design editor is unavailable until a successful project sync
+= File > Sync Project with Gradle Files
+
+
+
+
+
+[사이트]
+아이콘/해상도 = https://ldne.tistory.com/80
+이미지 색 추출 = http://labs.tineye.com/color/
+액션바 = https://recipes4dev.tistory.com/141
+(툴바) = 
+

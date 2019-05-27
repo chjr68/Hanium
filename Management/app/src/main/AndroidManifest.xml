@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_hanium_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
             android:name=".SplashActivity"
             android:screenOrientation="portrait"
@@ -20,9 +19,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"/>
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/Login_name"
+            android:theme="@style/RepresentTheme"></activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/ActionBar_name"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/RepresentTheme"></activity>
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@menu/menu" />
     </application>
 
 </manifest>
